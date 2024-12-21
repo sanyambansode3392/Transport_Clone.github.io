@@ -36,7 +36,8 @@ const Home = () => {
     const [ ride, setRide ] = useState(null)
 
     const navigate = useNavigate()
-
+// extra code
+const {sendMessage,receiveMessage}= useContext(SocketContext)
     const { socket } = useContext(SocketContext)
     const { user } = useContext(UserDataContext)
 
